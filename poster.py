@@ -30,7 +30,7 @@ user =  driver.find_element_by_id('email')
 user.send_keys(email)
 pwd = driver.find_element_by_id('pass')
 pwd.send_keys(password)
-button = driver.find_element_by_id('u_0_b')
+button = driver.find_element_by_xpath('//button[@type="submit"]')
 button.submit()
 time.sleep(5)
 
